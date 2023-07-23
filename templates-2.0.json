@@ -13,10 +13,9 @@
       "logo": "",
       "repository": {
         "url": "https://github.com/jexxa-projects/portainer-templates",
-        "stackfile": "jexxa/developerStack.yml"
+        "stackfile": "stacks/jexxa/developerStack.yml"
       }
     },
-
     {
       "type": 1,
       "title": "Registry",
