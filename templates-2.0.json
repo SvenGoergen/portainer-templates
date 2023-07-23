@@ -2,6 +2,22 @@
   "version": "2",
   "templates": [
     {
+      "type": 2,
+      "title": "Jexxa Developer Stack",
+      "description": "Standard stack for developing Jexxa applications",
+      "note": "Runs a postgresDB, a JMS2.0 broker, and Swagger-UI",
+      "categories": [
+        "Jexxa"
+      ],
+      "platform": "linux",
+      "logo": "",
+      "repository": {
+        "url": "https://github.com/jexxa-projects/portainer-templates",
+        "stackfile": "jexxa/developerStack.yml"
+      }
+    },
+
+    {
       "type": 1,
       "title": "Registry",
       "description": "Docker image registry",
