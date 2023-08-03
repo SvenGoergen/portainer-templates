@@ -12,23 +12,9 @@
       "platform": "linux",
       "logo": "",
       "repository": {
-        "url": "https://github.com/SvenGoergen/portainer-templates/portainer-templates",
+        "url": "https://github.com/jexxa-projects/portainer-templates",
         "stackfile": "stacks/jexxa/developerStack.yml"
       }
-    },
-    {
-	"type": 2,
-	"title": "Jexxa Entwickler Stack",
-	"description": "Standard stack zum Entwickeln von Jexxa Anwendungen",
-	"categories": [
-	  "Jexxa"
-	],
-	"platform:" "linux",
-	"logo": "",
-	"repository": {
-	  "url": "https://github.com/SvenGoergen/portainer-templates/portainer-templates",
-	  "stackfile": "stacks/jexxa/entwicklerstack.yml"
-	}
     },
     {
       "type": 1,
