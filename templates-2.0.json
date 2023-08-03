@@ -17,6 +17,20 @@
       }
     },
     {
+	"type": 2,
+	"title": "Jexxa Entwickler Stack",
+	"description": "Standard stack zum Entwickeln von Jexxa Anwendungen",
+	"categories": [
+	  "Jexxa"
+	],
+	"platform:" "linux",
+	"logo": "",
+	"repository": {
+	  "url": "https://github.com/jexxa-projects/portainer-templates",
+	  "stackfile": "stacks/jexxa/entwicklerstack.yml"
+	}
+    },
+    {
       "type": 1,
       "title": "Registry",
       "description": "Docker image registry",
