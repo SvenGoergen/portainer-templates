@@ -12,7 +12,7 @@
       "platform": "linux",
       "logo": "",
       "repository": {
-        "url": "https://github.com/jexxa-projects/portainer-templates",
+        "url": "https://github.com/SvenGoergen/portainer-templates",
         "stackfile": "stacks/jexxa/developerStack.yml"
       }
     },
