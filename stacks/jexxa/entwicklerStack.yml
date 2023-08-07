@@ -10,6 +10,7 @@ services:
       AMQ_USER: admin
       AMQ_PASSWORD: admin
       AMQ_EXTRA_ARGS: --relax-jolokia
+      PORT_POSTGRES: ${port_postgres}
 
   Postgres:
     image: postgres:latest
@@ -18,7 +19,7 @@ services:
       - postgres-data:/var/lib/postgresql/data
     ports:
       # - "5432:5432"
-      ${port1_postgres}
+      {{port_postgres}}
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
