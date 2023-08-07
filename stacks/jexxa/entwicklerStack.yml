@@ -19,11 +19,11 @@ services:
       - postgres-data:/var/lib/postgresql/data
     ports:
       # - "5432:5432"
-      # {{port_postgres}}
+      - {{port_postgres}}:{{port_postgres}}
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
-      PORT_POSTGRES: {{port_postgres}}
+      
 
   SwaggerUI:
     image: swaggerapi/swagger-ui:latest
