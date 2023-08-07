@@ -23,7 +23,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
-      - PORT_POSTGRES=${port_postgres}
+      PORT_POSTGRES: ${port_postgres}
 
   SwaggerUI:
     image: swaggerapi/swagger-ui:latest
