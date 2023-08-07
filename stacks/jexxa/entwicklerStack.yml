@@ -10,7 +10,7 @@ services:
       AMQ_USER: admin
       AMQ_PASSWORD: admin
       AMQ_EXTRA_ARGS: --relax-jolokia
-      PORT_POSTGRES: ${port_postgres}
+      
 
   Postgres:
     image: postgres:latest
@@ -23,6 +23,7 @@ services:
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
+      - PORT_POSTGRES=${port_postgres}
 
   SwaggerUI:
     image: swaggerapi/swagger-ui:latest
