@@ -2,18 +2,14 @@ version: "3.7"
 
 services:
 
-### Anwendung ###
-
-  JexxaApplication: # TODO: Ändern auf <ProjektName> (CamelCase)
-    image: ghcr.io/shs-it/jexxatemplate:latest # TODO: Ändern auf image: ghcr.io/shs-it/<projektname>:latest (klein geschrieben)
+  ### Application ###
+  JexxaTemplate: # TODO: Change <ProjectName> (CamelCase)
+    image: ghcr.io/jexxa-projects/jexxatemplate:latest # TODO: change image location ghcr.io/<your profile>/<projectname>:latest
     ports:
-      - "7500:7500" # HTTP ist nach außen per default deaktiviert. Bitte nur aktivieren, wenn absolut erforderlich HTTP Port anpassen "<freier HTTP-Port>:7500"
-      #- "8081:8081" # TODO: HTTPS Port anpassen "<freier HTTPS-Port>:8081"
-
-    #Beispiel für die Konfiguration von Secrets
-    #secrets:
-    #  - https_certificate
-    #  - https_certificate_password
+      - "7508:7500" # TODO: Adjust HTTP Port "<free HTTP-Port>:7500"
+    depends_on:
+      - ActiveMQ
+      - Postgres
 
     healthcheck:
       test: ["CMD-SHELL", "wget -nv -t1 --spider 'http://localhost:7500/BoundedContext/isRunning/'"]
@@ -21,22 +17,20 @@ services:
       timeout: 10s
       retries: 3
 
-    deploy:
+    deploy:   # configure zero downtime deployment
       replicas: 2
       update_config:
-        order: start-first        # Sorgt dafür, dass der neue Container zuerst startet bevor der alte heruntergefahren wird
-        failure_action: rollback  # Was soll passieren, wenn ein Update failed (health checks schlagen fehl)
+        order: start-first
+        failure_action: rollback
 
       rollback_config:
-        parallelism: 1            # Wie viele instanzen des Containers sollen gleichzeitig zurückgerollt werden
-        order: start-first        # Sorgt dafür das der alte Container zuerst startet und dann der neue (der nicht funktioniert) stoppt
+        parallelism: 1
+        order: start-first
 
       restart_policy:
         condition: on-failure
 
-
-
-### Infrastruktur ###
+  ### Infrastructure ###
 
   ActiveMQ:
     image: quay.io/artemiscloud/activemq-artemis-broker:latest
@@ -46,7 +40,8 @@ services:
       AMQ_EXTRA_ARGS: --relax-jolokia
 
   Postgres:
-    image: postgres:15
+    image: postgres:latest
+    user: postgres
     volumes:
       - postgres-data:/var/lib/postgresql/data
 
@@ -62,11 +57,3 @@ services:
 
 volumes:
   postgres-data:
-    driver: distributed-docker-volumes
-
-# Beispiel für die Definition von externen Secrets
-#secrets:
-#  https_certificate:
-#    external: true
-#  https_certificate_password:
-#    external: true
