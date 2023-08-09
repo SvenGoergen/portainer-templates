@@ -16,11 +16,12 @@ services:
     restart: always
     volumes:
       - postgres-data:/var/lib/postgresql/data
-    ports:
-      - "{{port_postgres}}:5432"
+     ports:
+      - "PORT_POSTGRES:5432"
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
+      - "PORT_POSTGRES=${PORT_POSTGR}"
 
   SwaggerUI:
     image: swaggerapi/swagger-ui:latest
