@@ -1,0 +1,72 @@
+version: "3.7"
+
+services:
+
+### Anwendung ###
+
+  JexxaApplication: # TODO: Ändern auf <ProjektName> (CamelCase)
+    image: ghcr.io/shs-it/jexxatemplate:latest # TODO: Ändern auf image: ghcr.io/shs-it/<projektname>:latest (klein geschrieben)
+    ports:
+      - "7500:7500" # HTTP ist nach außen per default deaktiviert. Bitte nur aktivieren, wenn absolut erforderlich HTTP Port anpassen "<freier HTTP-Port>:7500"
+      #- "8081:8081" # TODO: HTTPS Port anpassen "<freier HTTPS-Port>:8081"
+
+    #Beispiel für die Konfiguration von Secrets
+    #secrets:
+    #  - https_certificate
+    #  - https_certificate_password
+
+    healthcheck:
+      test: ["CMD-SHELL", "wget -nv -t1 --spider 'http://localhost:7500/BoundedContext/isRunning/'"]
+      interval: 10s
+      timeout: 10s
+      retries: 3
+
+    deploy:
+      replicas: 2
+      update_config:
+        order: start-first        # Sorgt dafür, dass der neue Container zuerst startet bevor der alte heruntergefahren wird
+        failure_action: rollback  # Was soll passieren, wenn ein Update failed (health checks schlagen fehl)
+
+      rollback_config:
+        parallelism: 1            # Wie viele instanzen des Containers sollen gleichzeitig zurückgerollt werden
+        order: start-first        # Sorgt dafür das der alte Container zuerst startet und dann der neue (der nicht funktioniert) stoppt
+
+      restart_policy:
+        condition: on-failure
+
+
+
+### Infrastruktur ###
+
+  ActiveMQ:
+    image: quay.io/artemiscloud/activemq-artemis-broker:latest
+    environment:
+      AMQ_USER: admin
+      AMQ_PASSWORD: admin
+      AMQ_EXTRA_ARGS: --relax-jolokia
+
+  Postgres:
+    image: postgres:15
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+    environment:
+      POSTGRES_PASSWORD: admin
+      POSTGRES_USER: postgres
+
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  postgres-data:
+    driver: distributed-docker-volumes
+
+# Beispiel für die Definition von externen Secrets
+#secrets:
+#  https_certificate:
+#    external: true
+#  https_certificate_password:
+#    external: true
