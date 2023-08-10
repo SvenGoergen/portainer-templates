@@ -77,7 +77,7 @@
 	     "description": "The Port where SwaggerUI can be reached ",
 	     "default": "8080"
 	}
-	     ]
+	     ],
     
 	    
     },
