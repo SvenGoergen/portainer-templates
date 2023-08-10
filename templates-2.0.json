@@ -76,6 +76,18 @@
 	     "label": "Port for SwaggerUI",
 	     "description": "The Port where SwaggerUI can be reached ",
 	     "default": "8080"
+	},
+	{
+	     "name": "PORT_ACTIVEMQ",
+	     "label": "Listen Port for activemq",
+	     "description": "The Port where activemq is listening ",
+	     "default": "61616"
+	},
+	{
+	     "name": "PORT_MON_ACTIVEMQ",
+	     "label": "port to monitor activemq",
+	     "description": "The Port where the activemq can be monitored ",
+	     "default": "8161"
 	}
 	     ]
     
