@@ -19,9 +19,9 @@
 	"env": [
 	{
 	     "name": "PORT_HTTP",
-	     "label": "Port for Postgres",
-	     "description": "The Port which Postgres uses",
-	     "default": "5432"
+	     "label": "Port for HTTP",
+	     "description": "The HTTP-Port used by JexxaTemplate",
+	     "default": "7508"
 	},
 	{
 	     "name": "GIT_PROFILE",
