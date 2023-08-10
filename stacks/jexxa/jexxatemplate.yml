@@ -57,4 +57,4 @@ services:
 
 volumes:
   postgres-data:
-      Driver: ${DRIVER}
+      driver: ${DRIVER}
