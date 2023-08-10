@@ -27,7 +27,8 @@ services:
     image: swaggerapi/swagger-ui:latest
     restart: always
     ports:
-      - '8080:8080'
+      - "${PORT_SWAG}:8080"
+      # - '8080:8080'
 
 volumes:
   postgres-data:
