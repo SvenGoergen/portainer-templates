@@ -15,39 +15,7 @@
       "repository": {
         "url": "https://github.com/SvenGoergen/portainer-templates",
         "stackfile": "stacks/jexxa/jexxatemplate.yml"
-      },
-	"env": [
-	{
-	     "name": "PORT_HTTP",
-	     "label": "Port for HTTP",
-	     "description": "The HTTP-Port used by JexxaTemplate",
-	     "default": "7508"
-	},
-	{
-	     "name": "GIT_PROFILE",
-	     "label": "Your Github-Name",
-	     "description": "The Github account name of the repository ",
-	     "default": "jexxa-projects"
-	},
-	{
-	     "name": "GIT_PROJECT_LOWER",
-	     "label": "Git project name (lowercase)",
-	     "description": "The name of the repository in lowercase",
-	     "default": "jexxatemplate"
-	},
-	{
-	     "name": "GIT_PROJECT_CAMEL",
-	     "label": "Git project name (CamelCase)",
-	     "description": "The name of the repository in CamelCase",
-	     "default": "JexxaTemplate"
-	},
-	{
-	     "name": "DRIVER",
-	     "label": "Volume Driver",
-	     "description": "The driver that will be used for the volume of JexxaTemplate",
-	     "default": "local"
-	}
-		]
+      }
      },
       {
 	    
