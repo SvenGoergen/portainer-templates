@@ -68,13 +68,14 @@
 	{
 	     "name": "PORT_POSTGR",
 	     "label": "Port for Postgres",
-	     "description": "Which Port Postgres will use",
+	     "description": "The Port which Postgres uses",
 	     "default": "5432"
 	}
 	     ]
     
 	    
     },
+
     {
       "type": 1,
       "title": "Registry",
