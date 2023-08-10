@@ -45,7 +45,7 @@
 	     "name": "DRIVER",
 	     "label": "Volume Driver",
 	     "description": "The driver that will be used for the volume of JexxaTemplate",
-	     "default": ""
+	     "default": "NULL"
 	}
 		]
      },
