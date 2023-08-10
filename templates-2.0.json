@@ -85,7 +85,7 @@
 	},
 	{
 	     "name": "PORT_MON_ACTIVEMQ",
-	     "label": "port to monitor activemq",
+	     "label": "Port to monitor activemq",
 	     "description": "The Port where the activemq can be monitored ",
 	     "default": "8161"
 	}
