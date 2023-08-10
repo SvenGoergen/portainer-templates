@@ -4,8 +4,11 @@ services:
   ActiveMQ:
     image: quay.io/artemiscloud/activemq-artemis-broker:latest
     ports:
-      - "61616:61616"
-      - "8161:8161"
+      - "${PORT_ACTIVEMQ}:61616"
+      - "${PORT_MON_ACTIVEMQ}:8161"
+      # default:
+      # 61616:61616
+      # 8161:8161
     environment:
       AMQ_USER: admin
       AMQ_PASSWORD: admin
