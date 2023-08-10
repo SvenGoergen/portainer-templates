@@ -71,6 +71,12 @@
 	     "description": "Which Port Postgres will use",
 	     "default": "5432"
 	}
+	{
+	     "name": "PORT_SWAG",
+	     "label": "Port for SwaggerUI",
+	     "description": "The Port where SwaggerUI can be reached ",
+	     "default": "8080"
+	}
 	     ]
     
 	    
