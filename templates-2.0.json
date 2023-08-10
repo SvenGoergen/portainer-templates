@@ -15,8 +15,8 @@
       "repository": {
         "url": "https://github.com/SvenGoergen/portainer-templates",
         "stackfile": "stacks/jexxa/jexxatemplate.yml"
-      },
-      
+      }
+     },
       {
 	    
       "type": 2,
@@ -32,7 +32,7 @@
         "url": "https://github.com/SvenGoergen/portainer-templates",
         "stackfile": "stacks/jexxa/jexxatemplatelocal.yml"
       }
-     },
+     
     },
     {
 	    
