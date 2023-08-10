@@ -22,7 +22,7 @@
       "type": 2,
       "title": "JexxaTemplateLocal",
       "description": "Stack for developing Jexxa applications",
-      "note": "Runs a postgresDB, a JMS2.0 broker, and JexxaApplication",
+      "note": "Runs a postgresDB, a JMS2.0 broker, and JexxaApplication with a local driver",
       "categories": [
         "Jexxa"
       ],
