@@ -35,12 +35,12 @@
 	     "description": "The name of the repository in lowercase",
 	     "default": "jexxatemplate"
 	},
-	{
-	     "name": "GIT_PROJECT_CAMEL",
-	     "label": "Git project name (CamelCase)",
-	     "description": "The name of the repository in CamelCase",
-	     "default": "JexxaTemplate"
-	},
+#	{
+#	     "name": "GIT_PROJECT_CAMEL",
+#	     "label": "Git project name (CamelCase)",
+#	     "description": "The name of the repository in CamelCase",
+#	     "default": "JexxaTemplate"
+#	},
 	{
 	     "name": "DRIVER",
 	     "label": "Volume Driver",
