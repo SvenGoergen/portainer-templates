@@ -22,7 +22,6 @@ services:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
       
-
   SwaggerUI:
     image: swaggerapi/swagger-ui:latest
     restart: always
