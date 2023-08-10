@@ -40,6 +40,12 @@
 	     "label": "Git project name (CamelCase)",
 	     "description": "The name of the repository in CamelCase",
 	     "default": "JexxaTemplate"
+	},
+	{
+	     "name": "DRIVER",
+	     "label": "Volume Driver",
+	     "description": "The driver that will be used for the volume of JexxaTemplate",
+	     "default": ""
 	}
 		]
      },
