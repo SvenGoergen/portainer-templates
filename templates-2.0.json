@@ -31,8 +31,14 @@
 	},
 	{
 	     "name": "HTTP_PORT",
-	     "label": "HTTP_PORT",
+	     "label": "HTTP_Port",
 	     "description": "The Port Jexxa uses for its application ",
+	     "default": "7508"
+	},
+	{
+	     "name": "REPO_NAME_CAMEL",
+	     "label": "rpository name (CamelCase)",
+	     "description": "The name of your repository in CamelCase",
 	     "default": "7508"
 	}
 	     ]
