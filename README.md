@@ -34,11 +34,13 @@ Default: https://raw.githubusercontent.com/portainer/templates/master/templates-
 
 6. If everything worked, Portainer will tell you that your stack was successfully deployed
 
+   ![App_Template_Stack_Configuration](pictures/App_Templates_Stack_Configuration.PNG)
+
 ## Viewing your stack
 
 1. Klick on stacks
 
-   ![App_Template_Stack_List](pictures/App_Templates_Stack_List.PNG)
+   ![App_Template_Stack_Deployed](pictures/App_Templates_Stack_Deployed.PNG)
 
    #
 
