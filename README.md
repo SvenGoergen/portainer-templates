@@ -24,7 +24,7 @@ Default: https://raw.githubusercontent.com/portainer/templates/master/templates-
 
 1. Select the template you want to deploy
 
-3. In the configuration, name your stack and change the default-values if you want to use your own values
+3. In the configuration, name your stack and change the default-values as you see fit
 
   ![App_Template_Stack_Configuration](pictures/App_Templates_Stack_Configuration.PNG)
 
