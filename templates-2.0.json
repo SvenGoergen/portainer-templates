@@ -49,6 +49,50 @@
         "stackfile": "stacks/jexxa/developerStack.yml"
       }
     },
+    {
+      "type": 2,
+      "title": "Jexxa Entwickler Stack",
+      "description": "Standard stack for developing Jexxa applications",
+      "note": "test Template",
+      "categories": [
+        "Jexxa"
+      ],
+      "platform": "linux",
+      "logo": "",
+      "repository": {
+        "url": "https://github.com/SvenGoergen/portainer-templates",
+        "stackfile": "stacks/jexxa/entwicklerStack.yml"
+      },
+	    "env": [
+	{
+	     "name": "PORT_POSTGR",
+	     "label": "Port for Postgres",
+	     "description": "The Port which Postgres uses",
+	     "default": "5432"
+	},
+	{
+	     "name": "PORT_SWAG",
+	     "label": "Port for SwaggerUI",
+	     "description": "The Port where SwaggerUI can be reached ",
+	     "default": "8080"
+	},
+	{
+	     "name": "PORT_ACTIVEMQ",
+	     "label": "Listen Port for activemq",
+	     "description": "The Port where activemq is listening ",
+	     "default": "61616"
+	},
+	{
+	     "name": "PORT_MON_ACTIVEMQ",
+	     "label": "Port to monitor activemq",
+	     "description": "The Port where the activemq can be monitored ",
+	     "default": "8161"
+	}
+	     ]
+    
+	    
+    },
+
   
     {
       "type": 1,
