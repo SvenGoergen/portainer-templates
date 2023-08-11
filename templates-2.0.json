@@ -1,8 +1,25 @@
 {
   "version": "2",
   "templates": [
-     
+     {
+	    
+      "type": 2,
+      "title": "JexxaTemplate",
+      "description": "Stack for developing Jexxa applications",
+      "note": "Runs a postgresDB, a JMS2.0 broker, and JexxaApplication",
+      "categories": [
+        "Jexxa"
+      ],
+      "platform": "linux",
+      "logo": "",
+      "repository": {
+        "url": "https://github.com/SvenGoergen/portainer-templates",
+        "stackfile": "stacks/jexxa/jexxatemplate.yml"
+      }
+     },
+    
 
+	  
     {
       "type": 1,
       "title": "Registry",
