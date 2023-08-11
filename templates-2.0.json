@@ -70,6 +70,12 @@
 	     "label": "Listen Port for activemq",
 	     "description": "The Port where activemq is listening ",
 	     "default": "61616"
+	},
+	{
+	     "name": "PORT_SWAG",
+	     "label": "Port for SwaggerUI",
+	     "description": "The Port where SwaggerUI can be reached ",
+	     "default": "8080"
 	}
     
 	    ]
