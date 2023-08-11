@@ -36,10 +36,10 @@
 	     "default": "7508"
 	},
 	{
-	     "name": "REPO_NAME_CAMEL",
-	     "label": "Repository name (CamelCase)",
-	     "description": "The name of your repository in CamelCase",
-	     "default": "JexxaTemplate"
+	     "name": "DRIVER",
+	     "label": "Driver for the Volumes",
+	     "description": "The driver thats used for the volumes",
+	     "default": "local"
 	}
 	     ]
      },
