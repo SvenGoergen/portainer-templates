@@ -69,7 +69,13 @@
 	     "label": "Port for Postgres",
 	     "description": "The Port which Postgres uses",
 	     "default": "5432"
-	}
+	},
+	{
+	     "name": "PORT_ACTIVEMQ",
+	     "label": "Listen Port for activemq",
+	     "description": "The Port where activemq is listening ",
+	     "default": "61616"
+}
     
 	    ]
     },
