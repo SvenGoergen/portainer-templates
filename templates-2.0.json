@@ -62,7 +62,14 @@
       "repository": {
         "url": "https://github.com/SvenGoergen/portainer-templates",
         "stackfile": "stacks/jexxa/entwicklerStack.yml"
-      }
+      },
+	    "env": [
+	{
+	     "name": "PORT_POSTGR",
+	     "label": "Port for Postgres",
+	     "description": "The Port which Postgres uses",
+	     "default": "5432"
+	}
     
 	    
     },
