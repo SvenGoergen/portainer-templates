@@ -14,7 +14,7 @@ Default: https://raw.githubusercontent.com/portainer/templates/master/templates-
 
 3. In Portainer klick on App Templates. You should now see all the different templates
 
-## using App Templates and deploying
+## Using App Templates and deploying
 
 1. Select the template you want to deploy
 
