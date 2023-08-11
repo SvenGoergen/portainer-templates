@@ -24,9 +24,9 @@
 	     "default": "jexxa-projects"
 	},
 	{
-	     "name": "REPO_NAME",
-	     "label": "Repository name",
-	     "description": "The name of your repository",
+	     "name": "REPO_NAME_LOWER",
+	     "label": "Repository name (lowercase)",
+	     "description": "The name of your repository in lowercase",
 	     "default": "jexxatemplate"
 	},
 	{
