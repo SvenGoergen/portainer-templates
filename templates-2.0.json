@@ -17,7 +17,24 @@
         "stackfile": "stacks/jexxa/jexxatemplate.yml"
       }
      },
-    
+     {
+	    
+      "type": 2,
+      "title": "JexxaTemplateLocal",
+      "description": "Stack for developing Jexxa applications",
+      "note": "Runs a postgresDB, a JMS2.0 broker, and JexxaApplication with a local driver",
+      "categories": [
+        "Jexxa"
+      ],
+      "platform": "linux",
+      "logo": "",
+      "repository": {
+        "url": "https://github.com/SvenGoergen/portainer-templates",
+        "stackfile": "stacks/jexxa/jexxatemplatelocal.yml"
+      }
+     
+    },
+
 
 	  
     {
