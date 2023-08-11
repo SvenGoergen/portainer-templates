@@ -75,7 +75,7 @@
 	     "label": "Listen Port for activemq",
 	     "description": "The Port where activemq is listening ",
 	     "default": "61616"
-}
+	}
     
 	    ]
     },
