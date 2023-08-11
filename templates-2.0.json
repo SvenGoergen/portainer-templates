@@ -113,6 +113,12 @@
 	     "label": "Port to monitor activemq",
 	     "description": "The Port where the activemq can be monitored ",
 	     "default": "8161"
+	},
+	{
+	     "name": "DRIVER",
+	     "label": "Driver for the Volumes",
+	     "description": "The driver thats used for the volumes",
+	     "default": "local"
 	}
 	     ]
     
