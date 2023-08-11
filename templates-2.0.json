@@ -30,10 +30,10 @@
 	     "default": "jexxatemplate"
 	},
 	{
-	     "name": "HTTP_PORT",
-	     "label": "HTTP_Port",
+	     "name": "PORT_HTTP",
+	     "label": "Port_HTTP",
 	     "description": "The Port Jexxa uses for its application ",
-	     "default": "7509"
+	     "default": "7508"
 	},
 	{
 	     "name": "DRIVER",
