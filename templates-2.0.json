@@ -32,7 +32,24 @@
         "url": "https://github.com/SvenGoergen/portainer-templates",
         "stackfile": "stacks/jexxa/jexxatemplatelocal.yml"
       }
-    },  
+    }, 
+    {
+	    
+      "type": 2,
+      "title": "Jexxa Developer Stack",
+      "description": "Standard stack for developing Jexxa applications",
+      "note": "Runs a postgresDB, a JMS2.0 broker, and Swagger-UI",
+      "categories": [
+        "Jexxa"
+      ],
+      "platform": "linux",
+      "logo": "",
+      "repository": {
+        "url": "https://github.com/SvenGoergen/portainer-templates",
+        "stackfile": "stacks/jexxa/developerStack.yml"
+      }
+    },
+  
     {
       "type": 1,
       "title": "Registry",
