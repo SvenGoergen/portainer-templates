@@ -3,7 +3,7 @@ version: "3.7"
 services:
 
   ### Application ###
-  JexxaTemplate: # TODO: Change <ProjectName> (CamelCase)
+  ${REPO_NAME_CAMEL}: # TODO: Change <ProjectName> (CamelCase)
     image: ghcr.io/${GIT_PROFILE}/${REPO_NAME_LOWER}:latest # TODO: change image location ghcr.io/<your profile>/<projectname>:latest
     ports:
       - "${PORT_HTTP}:7500" # TODO: Adjust HTTP Port "<free HTTP-Port>:7500"
