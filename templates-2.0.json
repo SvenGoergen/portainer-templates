@@ -15,7 +15,27 @@
       "repository": {
         "url": "https://github.com/SvenGoergen/portainer-templates",
         "stackfile": "stacks/jexxa/jexxatemplate.yml"
-      }
+      },
+	    "env": [
+	{
+	     "name": "GIT_PROFILE",
+	     "label": "Accountname for Github",
+	     "description": "The Accountname that owns the repository where your image lies",
+	     "default": "jexxa-projects"
+	},
+	{
+	     "name": "REPO_NAME",
+	     "label": "Repository name",
+	     "description": "The name of your repository",
+	     "default": "jexxatemplate"
+	},
+	{
+	     "name": "HTTP_PORT",
+	     "label": "HTTP_PORT",
+	     "description": "The Port Jexxa uses for its application ",
+	     "default": "7508"
+	}
+	     ]
      },
      {
 	    
