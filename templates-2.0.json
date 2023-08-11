@@ -33,7 +33,7 @@
 	     "name": "HTTP_PORT",
 	     "label": "HTTP_Port",
 	     "description": "The Port Jexxa uses for its application ",
-	     "default": "7508"
+	     "default": "7509"
 	},
 	{
 	     "name": "DRIVER",
