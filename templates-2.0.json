@@ -39,7 +39,7 @@
 	     "name": "REPO_NAME_CAMEL",
 	     "label": "rpository name (CamelCase)",
 	     "description": "The name of your repository in CamelCase",
-	     "default": "7508"
+	     "default": "JexxaTemplate"
 	}
 	     ]
      },
