@@ -21,7 +21,8 @@ services:
       - postgres-data:/var/lib/postgresql/data
     ports:
       - "${PORT_POSTGR}:5432"
-      # - "5432:5432"
+      # default: 
+      # 5432:5432
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: admin
@@ -31,8 +32,11 @@ services:
     restart: always
     ports:
       - "${PORT_SWAG}:8080"
-      # - '8080:8080'
+      # default: 
+      # 8080:8080
 
 volumes:
   postgres-data:
     driver: ${DRIVER}
+    # default:
+    # local
