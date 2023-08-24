@@ -6,7 +6,7 @@ For more information about the template definition format and how to deploy your
 
 ## Setting up:
 
-1. Open your a Portainer instance in your browser
+1. Open a Portainer instance in your browser
 
 2. Go to Settings and exchange the URL under App templates with: https://raw.githubusercontent.com/SvenGoergen/portainer-templates/master/templates-2.0.json
 
@@ -34,13 +34,13 @@ Default: https://raw.githubusercontent.com/portainer/templates/master/templates-
 
 6. If everything worked, Portainer will tell you that your stack was successfully deployed
 
-   ![App_Template_Stack_Configuration](pictures/App_Templates_Stack_Configuration.PNG)
+   ![App_Template_Stack_Deployed](pictures/App_Templates_Stack_Deployed.PNG)
 
 ## Viewing your stack
 
 1. Klick on stacks
 
-   ![App_Template_Stack_Deployed](pictures/App_Templates_Stack_Deployed.PNG)
+   ![App_Template_Stack_List](pictures/App_Templates_Stack_List.PNG)
 
    #
 
